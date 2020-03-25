@@ -1,20 +1,49 @@
-html, body {
-    font-family: 'Rubik', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     overflow-y: hidden;
-    background-image: radial-gradient(#fff, rgb(241, 241, 241), rgb(212, 212, 212));
     text-align: center;
 }
-div {
+body::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-image: url('./MG_6321.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.info {
+    opacity: 1;
     width: 90vw;
     margin: auto;
     border-bottom: 5px solid red;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 .logo {
+    opacity: 1;
     position: absolute;
     right: 5vw;
+    top: 0;
+}
+h1 span {
+    color: rgb(160, 0, 0);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+h1, h2, h3 {
+    color:rgba(0, 0, 0);
 }
