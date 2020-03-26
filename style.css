@@ -2,13 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     max-height: 100vh;
     text-align: center;
-    background-image: url('./MG_8066.jpg');
+    background: url('./MG_8066.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;
     margin: 0;
 }
 #wrapper {
@@ -46,4 +46,47 @@ h3 {
     font-weight: 400;
     color:rgba(0, 0, 0);
     font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background: url('./MG_8066.jpg') no-repeat center center fixed;
+        background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+    #wrapper {
+        width: 90%;
+        height: 85vh;
+        margin-top: 7.5vh;
+    }
+    .logo {
+        height: 70px;
+    }
+    span {
+        font-size:40px
+    }
+    
+    h1{
+        color: mediumvioletred;
+        margin:0;
+        font-size: 15px;
+    }
+    h2 {
+        color: purple;
+        font-size: 14px;
+    }
+    h2 span {
+        font-size: 20px;
+    }
+    h3 {
+        font-weight: 400;
+        color:rgba(0, 0, 0);
+        font-size: 13px;
+    }
+    h4 {
+        font-size: 12px;
+    }
 }
