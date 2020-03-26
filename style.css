@@ -1,8 +1,14 @@
+html, body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family : myFirstFont;
     max-height: 100vh;
     text-align: center;
-    background: url('./MG_8066.jpg');
+    background: url('./MG_7977.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     -ms-background-size: cover;
@@ -11,16 +17,21 @@ body {
     -webkit-background-size: cover;
     margin: 0;
 }
-#wrapper {
+#boxWrapper {
     margin: auto;
-    height:90vh;
-    margin-top: 5vh;
-    background-color:rgba(255, 255, 255, 0.7);
+    height:750px;
+    /* margin-top: 5vh */
+    background-color:rgba(255, 255, 255, 0.8);
     width:450px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#wrapper{
+    height: 100%;
+    display: flex;
 }
 
 #passoverImage{
@@ -36,35 +47,52 @@ span {
 h1{
     color: mediumvioletred;
     margin:0;
-    font-size: 20px;
+    font-size: 54px;
+    height: 96px;
 }
 h2 {
     color: purple;
-    font-size: 18px;
+    font-size: 41px;
+    margin:0
 }
 h2 span {
-    font-size: 28px;
+    font-size: 65px;
 }
 h3 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
     color:rgba(0, 0, 0);
-    font-size: 18px;
+    margin: 0;
+    
 }
+
+#website{
+    font-size: 41px;
+    margin: 0;
+}
+.info{
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(spring-is-coming.otf);
+  }
 
 @media only screen and (max-width: 480px) {
     body {
-        background: url('./MG_8066.jpg') no-repeat center center fixed;
+        background: url('./MG_6316.jpg') no-repeat center center fixed;
         background-size: cover;
         -ms-background-size: cover;
         -o-background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
     }
-    #wrapper {
+    #boxWrapper {
         width: 90%;
         height: 85vh;
         margin-top: 7.5vh;
+        border: 1px solid black;
     }
     .logo {
         height: 70px;
