@@ -19,8 +19,6 @@ body {
 }
 #boxWrapper {
     margin: auto;
-    height:750px;
-    /* margin-top: 5vh */
     background-color:rgba(255, 255, 255, 0.8);
     width:450px;
 
@@ -32,6 +30,8 @@ body {
 #wrapper{
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #passoverImage{
@@ -45,10 +45,10 @@ span {
 }
 
 h1{
+    display: inline;
     color: mediumvioletred;
     margin:0;
     font-size: 54px;
-    height: 96px;
 }
 h2 {
     color: purple;
@@ -77,7 +77,7 @@ h3 {
 @font-face {
     font-family: myFirstFont;
     src: url(spring-is-coming.otf);
-  }
+}
 
 @media only screen and (max-width: 480px) {
     body {
@@ -90,12 +90,11 @@ h3 {
     }
     #boxWrapper {
         width: 90%;
-        height: 85vh;
         margin-top: 7.5vh;
         border: 1px solid black;
     }
     .logo {
-        height: 70px;
+        height: 90px;
     }
     span {
         font-size:40px
@@ -104,11 +103,11 @@ h3 {
     h1{
         color: mediumvioletred;
         margin:0;
-        font-size: 15px;
+        font-size: 25px;
     }
     h2 {
         color: purple;
-        font-size: 14px;
+        font-size: 22px;
     }
     h2 span {
         font-size: 20px;
@@ -116,9 +115,7 @@ h3 {
     h3 {
         font-weight: 400;
         color:rgba(0, 0, 0);
-        font-size: 13px;
+        font-size: 23px;
     }
-    h4 {
-        font-size: 12px;
-    }
+
 }
